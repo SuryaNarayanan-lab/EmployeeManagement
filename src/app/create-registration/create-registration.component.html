@@ -1,0 +1,110 @@
+<div class="logo text-center">
+  <img width="150" src="assets/company.png" alt="" />
+</div>
+
+<div class="registration-form m-3 p-4">
+  <form [formGroup]="registerForm">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input formControlName="firstName" matInput placeholder="Firstname" />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input formControlName="lastName" matInput placeholder="Lastname" />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Company Email</mat-label>
+          <input formControlName="companyEmail" matInput placeholder="CompanyEmail" />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Employee Code</mat-label>
+          <input type="number" formControlName="employeeCode" matInput placeholder="Employee Code"
+          />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Date of Joining</mat-label>
+          <input formControlName="dateOfJoining" matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle
+            matIconSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+            <mat-label>Employee Status</mat-label>
+            <mat-select formControlName="employeeStatus">
+              <mat-option *ngFor="let Empstatus of ['Active' , 'Inactive']" [value]="Empstatus">
+                {{Empstatus}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <label id="example-radio-group-label">Gender</label>
+        <mat-radio-group formControlName="gender" class="example-radio-group">
+        <mat-radio-button class="example-radio-button" *ngFor="let genders of genders" [value]="genders">
+            {{ genders }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="col-md-6">
+        <label id="example-radio-group-label">Freshness</label>
+        <mat-radio-group formControlName="freshness" class="example-radio-group">
+        <mat-radio-button class="example-radio-button" *ngFor="let freshness of freshness" [value]="freshness">
+            {{ freshness }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Salary Package</mat-label>
+          <mat-select formControlName="salaryPackage">
+            <mat-option *ngFor="let salaryValue of salaryValue" [value]="salaryValue">
+              {{salaryValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    <div class="col-md-6">
+      <mat-form-field appearance="outline">
+        <mat-label>Skills</mat-label>
+        <mat-select formControlName="skills">
+          <mat-option *ngFor="let skills of skills" [value]="skills">
+            {{skills}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field appearance="outline">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+          <mat-option *ngFor="let desgination of desgination" [value]="desgination">
+            {{desgination}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile</mat-label>
+        <input formControlName="mobile" matInput placeholder= "Mobile" />
+      </mat-form-field>
+    </div>
+    </div>
+    <button *ngIf="!isUpdateActive" (click)="submit()" class="example-button mt-4" mat-raised-button color="warn">Submit</button>
+    <button *ngIf="isUpdateActive" (click)="update()" class="example-button mt-4" mat-raised-button color="warn">Update</button>
+  </form>
+</div>

@@ -1,0 +1,61 @@
+<mat-card *ngIf="userDetails" class="example-card text-center">
+    <mat-card-header class="justify-content-center">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{userDetails.firstName}} {{userDetails.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{userDetails.companyEmail}}</mat-card-subtitle>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <div matLine>
+            Mobile Number :
+            <strong>{{userDetails.mobile}}</strong>
+          </div>
+        </mat-list-item>
+  
+        <mat-list-item>
+          <div matLine>
+            Gender :
+            <strong>{{userDetails.gender}}</strong>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <div matLine>
+            Salary Package :
+            <strong>{{userDetails.salaryPackage}}</strong>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <div matLine>
+            Employee Code :
+            <strong>{{userDetails.employeeCode}}</strong>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <div matLine>
+            Date of Joining :
+            <strong>{{userDetails.dateOfJoining | date}}</strong>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+          <div matLine>
+            Freshness :
+            <strong>{{userDetails.freshness}}</strong>
+          </div>
+        </mat-list-item>
+        <mat-list-item>
+            <div matLine>
+              Role :
+            <strong>{{userDetails.role}}</strong>
+            </div>
+          </mat-list-item>
+        <mat-list-item>
+            <div matLine>
+            Skills:    
+            <strong>{{userDetails.skills}}</strong>
+            </div>
+        </mat-list-item>  
+      </mat-list>
+    </mat-card-content>
+  </mat-card>

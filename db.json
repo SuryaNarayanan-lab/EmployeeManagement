@@ -1,0 +1,79 @@
+{
+  "employeeform": [
+    {
+      "firstName": "Surya",
+      "lastName": "Narayanan",
+      "companyEmail": "test@test.com",
+      "employeeCode": 53,
+      "dateOfJoining": "2021-03-03T18:30:00.000Z",
+      "employeeStatus": "Active",
+      "gender": "Male",
+      "freshness": "Experienced",
+      "salaryPackage": "1LPA-5LPA",
+      "skills": "HTML,CSS,JS",
+      "role": "FRONTEND DEV",
+      "mobile": "9952981375",
+      "id": 1
+    },
+    {
+      "firstName": "Ajay",
+      "lastName": "Vk",
+      "companyEmail": "test1@test.com",
+      "employeeCode": 52,
+      "dateOfJoining": "2021-03-01T18:30:00.000Z",
+      "employeeStatus": "Active",
+      "gender": "Male",
+      "freshness": "Experienced",
+      "salaryPackage": "5LPA-10LPA",
+      "skills": "AWS,JENKINS,GIT",
+      "role": "DEVOPS",
+      "mobile": "9876543210",
+      "id": 2
+    },
+    {
+      "firstName": "Sanjay",
+      "lastName": "K",
+      "companyEmail": "test3@test.com",
+      "employeeCode": 60,
+      "dateOfJoining": "2022-07-01T18:30:00.000Z",
+      "employeeStatus": "Active",
+      "gender": "Male",
+      "freshness": "Experienced",
+      "salaryPackage": "5LPA-10LPA",
+      "skills": "JAVA,NODEJS,PYTHON",
+      "role": "BACKEND DEV",
+      "mobile": "7845123690",
+      "id": 4
+    },
+    {
+      "firstName": "Anirudh",
+      "lastName": "B",
+      "companyEmail": "test2@test.com",
+      "employeeCode": 10,
+      "dateOfJoining": "2019-02-01T18:30:00.000Z",
+      "employeeStatus": "Active",
+      "gender": "Male",
+      "freshness": "Experienced",
+      "salaryPackage": "10LPA and above",
+      "skills": "JAVA,NODEJS,PYTHON",
+      "role": "BACKEND DEV",
+      "mobile": "7894561230",
+      "id": 7
+    },
+    {
+      "firstName": "Prakash",
+      "lastName": "G",
+      "companyEmail": "test5@test.com",
+      "employeeCode": 65,
+      "dateOfJoining": "2023-07-06T18:30:00.000Z",
+      "employeeStatus": "Active",
+      "gender": "Male",
+      "freshness": "Fresher",
+      "salaryPackage": "5LPA-10LPA",
+      "skills": "JAVA,NODEJS,PYTHON",
+      "role": "BACKEND DEV",
+      "mobile": "98625292266",
+      "id": 8
+    }
+  ]
+}
